@@ -1,0 +1,57 @@
+# Byte-compiled / optimized / DLL files
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# 가상환경 (Virtual Environments)
+.venv/
+venv/
+ENV/
+env/
+
+# 환경변수 및 비밀값 (Secrets & Environment variables)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+
+# 대용량 및 보안 데이터셋 (TCGA Dataset)
+dataset/
+data/raw/
+data/processed/
+
+# 모델 학습 결과물 및 체크포인트 (Trained models & binary)
+models/trained/
+*.joblib
+*.pkl
+
+# 분석 및 평가 리포트 이미지/문서 (실험 리포트는 빌드하여 자동생성되므로 제외 가능)
+reports/confusion_matrix_*.png
+reports/*.csv
+reports/modeling_report.md
+reports/data_audit.md
+
+# Jupyter Notebook 캐시
+.ipynb_checkpoints/
+
+# IDE 및 에디터 캐시
+.vscode/
+.idea/
+.claude/
+.gemini/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# 운영체제 임시 파일 (OS specific)
+.DS_Store
+Thumbs.db
+Desktop.ini
+~$*

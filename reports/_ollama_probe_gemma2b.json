@@ -1,0 +1,92 @@
+{
+  "reachable": true,
+  "models": {
+    "gemma2:2b": [
+      {
+        "chars": 100,
+        "rest": {
+          "ok": false,
+          "elapsed": 122.0294349193573,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": true,
+          "elapsed": 81.87515592575073,
+          "resp_len": 94,
+          "error_type": null,
+          "error": null
+        }
+      },
+      {
+        "chars": 300,
+        "rest": {
+          "ok": false,
+          "elapsed": 12.205893516540527,
+          "resp_len": 0,
+          "error_type": "HTTPError",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 54.42906165122986,
+          "resp_len": 0,
+          "error_type": "ResponseError",
+          "error": "an error was encountered while running the model: read tcp 127.0.0.1:59068->127.0.0.1:58879: wsarecv: An existing connection was forcibly closed by the remote host. (status code: 500)"
+        }
+      },
+      {
+        "chars": 500,
+        "rest": {
+          "ok": false,
+          "elapsed": 52.70807361602783,
+          "resp_len": 0,
+          "error_type": "HTTPError",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 55.16427946090698,
+          "resp_len": 0,
+          "error_type": "ResponseError",
+          "error": "an error was encountered while running the model: read tcp 127.0.0.1:59467->127.0.0.1:59282: wsarecv: An existing connection was forcibly closed by the remote host. (status code: 500)"
+        }
+      },
+      {
+        "chars": 800,
+        "rest": {
+          "ok": false,
+          "elapsed": 122.04553771018982,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 87.52855372428894,
+          "resp_len": 0,
+          "error_type": "ResponseError",
+          "error": "model runner has unexpectedly stopped, this may be due to resource limitations or an internal error, check ollama server logs for details (status code: 500)"
+        }
+      },
+      {
+        "chars": 1200,
+        "rest": {
+          "ok": false,
+          "elapsed": 58.493170738220215,
+          "resp_len": 0,
+          "error_type": "HTTPError",
+          "error": "HTTP Error 500: Internal Server Error"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 62.67375111579895,
+          "resp_len": 0,
+          "error_type": "ResponseError",
+          "error": "an error was encountered while running the model: read tcp 127.0.0.1:60254->127.0.0.1:60057: wsarecv: An existing connection was forcibly closed by the remote host. (status code: 500)"
+        }
+      }
+    ]
+  }
+}

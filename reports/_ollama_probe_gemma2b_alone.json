@@ -1,0 +1,92 @@
+{
+  "reachable": true,
+  "models": {
+    "gemma2:2b": [
+      {
+        "chars": 100,
+        "rest": {
+          "ok": false,
+          "elapsed": 47.05265402793884,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 51.96230745315552,
+          "resp_len": 0,
+          "error_type": "ReadTimeout",
+          "error": "timed out"
+        }
+      },
+      {
+        "chars": 300,
+        "rest": {
+          "ok": false,
+          "elapsed": 47.05551719665527,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 48.569113969802856,
+          "resp_len": 0,
+          "error_type": "ReadTimeout",
+          "error": "timed out"
+        }
+      },
+      {
+        "chars": 500,
+        "rest": {
+          "ok": false,
+          "elapsed": 47.03373718261719,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 48.57678008079529,
+          "resp_len": 0,
+          "error_type": "ReadTimeout",
+          "error": "timed out"
+        }
+      },
+      {
+        "chars": 800,
+        "rest": {
+          "ok": false,
+          "elapsed": 47.04872918128967,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 49.336026668548584,
+          "resp_len": 0,
+          "error_type": "ReadTimeout",
+          "error": "timed out"
+        }
+      },
+      {
+        "chars": 1200,
+        "rest": {
+          "ok": false,
+          "elapsed": 47.04273533821106,
+          "resp_len": 0,
+          "error_type": "TimeoutError",
+          "error": "timed out"
+        },
+        "langchain": {
+          "ok": false,
+          "elapsed": 48.5635507106781,
+          "resp_len": 0,
+          "error_type": "ReadTimeout",
+          "error": "timed out"
+        }
+      }
+    ]
+  }
+}
