@@ -1,0 +1,26 @@
+{
+  "code_to_id": {
+    "BRCA": 0,
+    "COAD": 1,
+    "KIRC": 2,
+    "LUAD": 3,
+    "LUSC": 4,
+    "THCA": 5
+  },
+  "id_to_code": {
+    "0": "BRCA",
+    "1": "COAD",
+    "2": "KIRC",
+    "3": "LUAD",
+    "4": "LUSC",
+    "5": "THCA"
+  },
+  "disease_to_code": {
+    "breast invasive carcinoma": "BRCA",
+    "lung adenocarcinoma": "LUAD",
+    "lung squamous cell carcinoma": "LUSC",
+    "kidney clear cell carcinoma": "KIRC",
+    "colon adenocarcinoma": "COAD",
+    "thyroid carcinoma": "THCA"
+  }
+}

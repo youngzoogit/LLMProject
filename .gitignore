@@ -23,7 +23,7 @@ env/
 # 대용량 및 보안 데이터셋 (TCGA Dataset)
 dataset/
 data/raw/
-data/processed/
+# data/processed/
 
 # 모델 학습 결과물 및 체크포인트 (Trained models & binary)
 # models/trained/
