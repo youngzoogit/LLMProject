@@ -26,9 +26,9 @@ data/raw/
 data/processed/
 
 # 모델 학습 결과물 및 체크포인트 (Trained models & binary)
-models/trained/
-*.joblib
-*.pkl
+# models/trained/
+# *.joblib
+# *.pkl
 
 # 분석 및 평가 리포트 이미지/문서 (실험 리포트는 빌드하여 자동생성되므로 제외 가능)
 reports/confusion_matrix_*.png
