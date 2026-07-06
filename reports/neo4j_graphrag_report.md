@@ -4,7 +4,7 @@
 
 현재 프로젝트에 lightweight Neo4j GraphRAG를 연결했다.
 
-- `.env`의 `NEO4J_URI`를 `neo4j+ssc://a2d21947.databases.neo4j.io`로 변경했다.
+- `.env`의 `NEO4J_URI`를 `neo4j+ssc://<INSTANCE_ID>.databases.neo4j.io`로 변경했다. (실제 인스턴스 ID는 `.env`에만 보관하고 문서에는 남기지 않는다.)
 - `neo4j+s://`는 이 PC/Python 환경에서 TLS 인증서 검증 실패가 발생했다.
 - `neo4j+ssc://`에서는 `graph_ping()`과 `RETURN 1` 쿼리가 성공했다.
 - `src/rag/graph_store.py`의 `build_graph()`로 유전자-암종-모델-근거문서 그래프를 Neo4j에 적재했다.
