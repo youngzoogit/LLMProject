@@ -1,0 +1,35 @@
+# ─────────────────────────────────────────────────────────────
+# TCGA 설명가능 AI 암종 분류 — Streamlit 배포용 런타임 의존성
+# 앱 실행 경로(app.py + src/)에서 실제 import 되는 패키지만 포함.
+# 버전은 개발/검증 환경(.venv) 기준으로 고정.
+# ─────────────────────────────────────────────────────────────
+
+# ── Core app / UI ──
+streamlit==1.58.0
+pandas==3.0.3
+numpy==2.5.0
+python-dotenv==1.2.2
+
+# ── ML 모델 (학습·예측·해석) ──
+scikit-learn==1.9.0
+joblib==1.5.3          # 저장된 모델 로드(predict.py)
+pyarrow==24.0.0        # train/test parquet 읽기
+
+# ── LLM (Google Gemini, 기본 provider) ──
+langchain-core==1.4.8
+langchain-google-genai==4.2.6
+
+# ── GraphRAG (Neo4j 드라이버) ──
+neo4j==6.2.0
+certifi==2026.6.17     # neo4j+ssc TLS / HTTPS 인증서
+
+# ─────────────────────────────────────────────────────────────
+# 선택(Optional) — 배포 시 불필요, 로컬 실험/학습에만 사용
+#   Ollama 로컬 LLM fallback (LLM_ENABLE_OLLAMA_FALLBACK=1일 때만):
+# langchain-ollama==1.1.0
+#   모델 재학습 시 Confusion Matrix 시각화(train_models.py):
+# matplotlib==3.11.0
+#   langchain BM25 리트리버 경로 사용 시:
+# langchain-community==0.4.2
+# rank-bm25==0.2.2
+# ─────────────────────────────────────────────────────────────
