@@ -312,6 +312,13 @@ with tab_chat:
         if submitted and typed_question.strip():
             submitted_question = typed_question.strip()
 
+        user_question = submitted_question or pending_question
+        if user_question:
+            with st.spinner("근거를 검색하고 답변을 생성하는 중..."):
+                res = hybrid_answer(user_question, summary, cancer_code, cancer_name, cancer_genes)
+            st.session_state.chat_messages.append(("user", user_question))
+            st.session_state.chat_messages.append(("assistant", res))
+
         messages = st.session_state.chat_messages
         recent = messages[-(RECENT_CHAT_TURNS * 2) :]
         with st.container(height=340):
@@ -332,11 +339,3 @@ with tab_chat:
                             st.markdown(payload)
                         else:
                             _render_assistant(payload)
-
-    user_question = submitted_question or pending_question
-    if user_question:
-        with st.spinner("근거를 검색하고 답변을 생성하는 중..."):
-            res = hybrid_answer(user_question, summary, cancer_code, cancer_name, cancer_genes)
-        st.session_state.chat_messages.append(("user", user_question))
-        st.session_state.chat_messages.append(("assistant", res))
-        st.rerun()
