@@ -32,7 +32,7 @@ data/raw/
 
 # 분석 및 평가 리포트 이미지/문서 (실험 리포트는 빌드하여 자동생성되므로 제외 가능)
 reports/confusion_matrix_*.png
-reports/*.csv
+# reports/*.csv
 reports/modeling_report.md
 reports/data_audit.md
 
